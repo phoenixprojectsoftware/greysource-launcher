@@ -1,5 +1,5 @@
 /*
-	This CPP is part of the "Grey Source Launcher." Written by Sabian Roberts (https://github.com/sabian-heatwave) for the video game "CORRIDORS".
+	This CPP is part of the "Grey Source Launcher." Written by Sabian Roberts (https://github.com/sabian-heatwave)
 	Copyright © 2020 The Phoenix Project.
 	The Phoenix Project follows the "Half Life 1 SDK License" https://github.com/valvesoftware/halflife/blob/master/LICENSE
 */
@@ -7,15 +7,15 @@
 #include <windows.h>
 using namespace std;
 
-void main() {
-	string GREYSOURCEBUILD = "CORR2003";
+int main() {
+	string GREYSOURCEBUILD = "ZAMNHL2005";
 	string TYPEOFGREYSOURCEBUILD = "Propietary";
 	string HALFLIFEBUILD = "1.1.2.2";
 	string VALVEEXEDATE = "15:17:55 Jul 24 2019 (8308)";
 	string COPYRIGHT = "Copyright © 2020 The Phoenix Project. This program follows the Half-Life 1 SDK License.";
-	string GAME = "CORRIDORS";
+	string GAME = "Half-Life: Zombies Ate My Neighbours";
 	string RELEASE = "2020";
-	string GAMEDIR = "PhoenixCORRIDORS";
+	string GAMEDIR = "zamnhl";
 
 	system("TITLE Grey Source Launcher");
 	cout << COPYRIGHT << "\n";
@@ -26,7 +26,7 @@ void main() {
 	cout << "Grey Source build: " << GREYSOURCEBUILD << "\n";
 	cout << "Type of GS build: " << TYPEOFGREYSOURCEBUILD << "\n";
 	cout << "EXE Date: " << VALVEEXEDATE << "\n";
-	int result = system("CORRIDORS\\hl.exe -game PhoenixCORRIDORS");
+	int result = system("Valve\\hl.exe zamnhl");
 	string SAFE = "It is now safe to close this window.";
 	cout << SAFE << "\n";
 	system("pause");
